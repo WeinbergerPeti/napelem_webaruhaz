@@ -18,7 +18,7 @@ return new class extends Migration
             $table->foreignId("rendelés_szám")->references("rendelés_szám")->on("rendeles");
             $table->foreignId("termék_id")->references("termék_id")->on("termek");
             $table->integer("mennyiség");
-            $table->decimal("nettó ár");
+            $table->decimal("nettó_ár");
             $table->timestamps();
         });
     }

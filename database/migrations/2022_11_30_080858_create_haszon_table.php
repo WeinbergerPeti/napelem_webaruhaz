@@ -16,8 +16,8 @@ return new class extends Migration
         Schema::create('haszon', function (Blueprint $table) {
             $table->primary(["dátum"]);
             $table->date("dátum");
-            $table->integer("haszon százalék");
-            $table->integer("áfa százalék");
+            $table->integer("haszon_százalék");
+            $table->integer("áfa_százalék");
             $table->timestamps();
         });
     }

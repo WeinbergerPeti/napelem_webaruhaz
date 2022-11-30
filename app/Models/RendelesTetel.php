@@ -18,6 +18,6 @@ class RendelesTetel extends Model
     protected $fillable=[
         "termék_id",
         "mennyiség",
-        "nettó ár",
+        "nettó_ár",
     ];
 }

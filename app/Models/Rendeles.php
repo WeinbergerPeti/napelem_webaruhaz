@@ -14,7 +14,7 @@ class Rendeles extends Model
         "felhasználó_id",
         "végösszeg",
         "kedvezmény",
-        "kedvezményes ár",
+        "kedvezményes_ár",
         "állapot",
     ];
 }

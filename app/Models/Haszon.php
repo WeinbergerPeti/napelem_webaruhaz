@@ -16,7 +16,7 @@ class Haszon extends Model
     } 
 
     protected $fillable=[
-        "haszon százalék",
-        "áfa százalék"
+        "haszon_százalék",
+        "áfa_százalék"
     ];
 }

@@ -19,7 +19,7 @@ return new class extends Migration
             $table->foreignId("felhasználó_id")->references("felhasználó_id")->on("felhasznalo");
             $table->decimal("végösszeg");
             $table->integer("kedvezmény")->length(2)->default(0);
-            $table->integer("kedvezményes ár");
+            $table->integer("kedvezményes_ár");
             $table->char("állapot", 1);
             $table->timestamps();
         });
