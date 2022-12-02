@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id("rendelés_szám");
             $table->date("dátum")->getdate();
             $table->foreignId("felhasználó_id")->references("felhasználó_id")->on("felhasznalo");
+            $table->foreignId("szállítási_cím")->references("cím_id")->on("cim");
             $table->decimal("végösszeg");
             $table->integer("kedvezmény")->length(2)->default(0);
             $table->integer("kedvezményes_ár");

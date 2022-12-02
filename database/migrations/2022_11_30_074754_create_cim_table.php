@@ -30,7 +30,7 @@ return new class extends Migration
             $table->timestamps();;
         });
         // Cim::create(["irányítószám"=>1118, "város" => "Budapest", "közterület neve" => "Ménesi", "közterület jellege" => "út", "házszám" =>"77"]);
-        Cim::create(["irányítószám"=>1041, "város" => "Budapest", "közterület neve" => "Lőrinc", "közterület jellege" => "utca", "hely_házszám" =>"10", "hely_ház_jelleg"=>"hsz"]);
+        // Cim::create(["irányítószám"=>1041, "város" => "Budapest", "közterület neve" => "Lőrinc", "közterület jellege" => "utca", "hely_házszám" =>"10", "hely_ház_jelleg"=>"hsz"]);
 
     }
 

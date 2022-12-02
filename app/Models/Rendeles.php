@@ -12,6 +12,7 @@ class Rendeles extends Model
     protected $fillable=[
         "dátum",
         "felhasználó_id",
+        "szállítási_cím",
         "végösszeg",
         "kedvezmény",
         "kedvezményes_ár",
