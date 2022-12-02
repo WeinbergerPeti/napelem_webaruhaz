@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "27e79f825847bcbc4a5895745a5db407",
+    "content-hash": "ab401dbbc8c11eab5bf8e8d9731970e3",
     "packages": [
         {
             "name": "brick/math",
@@ -136,6 +136,79 @@
                 "source": "https://github.com/dflydev/dflydev-dot-access-data/tree/v3.0.2"
             },
             "time": "2022-10-27T11:44:00+00:00"
+        },
+        {
+            "name": "ditscheri/laravel-check-constraints",
+            "version": "v0.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ditscheri/laravel-check-constraints.git",
+                "reference": "e6cd1c06c07a34943abc031fef2e591d9a5f33c4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ditscheri/laravel-check-constraints/zipball/e6cd1c06c07a34943abc031fef2e591d9a5f33c4",
+                "reference": "e6cd1c06c07a34943abc031fef2e591d9a5f33c4",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^8.0|^9.0",
+                "php": "^8.0",
+                "spatie/laravel-package-tools": "^1.9.2"
+            },
+            "require-dev": {
+                "nunomaduro/collision": "^5.10|^6.0",
+                "nunomaduro/larastan": "^1.0.3|^2.0.1",
+                "orchestra/testbench": "^6.0|^7.0",
+                "pestphp/pest": "^1.21",
+                "pestphp/pest-plugin-laravel": "^1.1",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Ditscheri\\CheckConstraints\\CheckConstraintsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ditscheri\\CheckConstraints\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Bakan",
+                    "email": "daniel@ditscheri.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Add check constraints to your Laravel schema.",
+            "homepage": "https://github.com/ditscheri/laravel-check-constraints",
+            "keywords": [
+                "ditscheri",
+                "laravel",
+                "laravel-check-constraints"
+            ],
+            "support": {
+                "issues": "https://github.com/ditscheri/laravel-check-constraints/issues",
+                "source": "https://github.com/ditscheri/laravel-check-constraints/tree/v0.0.6"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ditscheri",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-02-19T19:52:59+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -2833,6 +2906,66 @@
                 }
             ],
             "time": "2022-11-05T23:03:38+00:00"
+        },
+        {
+            "name": "spatie/laravel-package-tools",
+            "version": "1.13.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-package-tools.git",
+                "reference": "4af8e608184471b5568af6265ebb0ca0025c131a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/4af8e608184471b5568af6265ebb0ca0025c131a",
+                "reference": "4af8e608184471b5568af6265ebb0ca0025c131a",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^9.28",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.5",
+                "orchestra/testbench": "^7.7",
+                "pestphp/pest": "^1.22",
+                "phpunit/phpunit": "^9.5.24",
+                "spatie/pest-plugin-test-time": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\LaravelPackageTools\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Tools for creating Laravel packages",
+            "homepage": "https://github.com/spatie/laravel-package-tools",
+            "keywords": [
+                "laravel-package-tools",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-package-tools/issues",
+                "source": "https://github.com/spatie/laravel-package-tools/tree/1.13.7"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-11-15T09:10:09+00:00"
         },
         {
             "name": "symfony/console",

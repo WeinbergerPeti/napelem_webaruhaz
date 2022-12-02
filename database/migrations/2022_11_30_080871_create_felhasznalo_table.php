@@ -33,8 +33,11 @@ return new class extends Migration
             $table->char("jogosultság", 1)->nullable(false); //R: rendszer admin, A: általános admin, F: felhasználó
             $table->rememberToken();
             $table->timestamps();
+
+            // $table->check("vezetéknév" >= 2);
         });
-        Felhasznalo::create(["email" => "Weinbergerpeti@gmail.com","jelszó" => Hash::make("Peti1999"), "számlázási cím" => 1, "szállítási cím 1" => 1, "vezetéknév" => "Weinberger", "keresztnév" => "Péter", "telefonszám" => 303696080, "jelleg" => "M", "jogosultság" => "R"]);
+        Felhasznalo::create(["email" => "weinbergerpeti@gmail.com","jelszó" => Hash::make("Peti1999"), "számlázási cím" => 1, "szállítási cím 1" => 1, "vezetéknév" => "Weinberger", "keresztnév" => "Péter", "telefonszám" => 303696080, "jelleg" => "M", "jogosultság" => "R"]);
+        Felhasznalo::create(["email" => "xujiyu@gmail.com","jelszó" => Hash::make("Mate1999"), "számlázási cím" => 1, "szállítási cím 1" => 1, "vezetéknév" => "X", "keresztnév" => "ji yu", "telefonszám" => 303696080, "jelleg" => "M", "jogosultság" => "R"]);
     }
 
     /**
