@@ -3,6 +3,7 @@
 use App\Models\Felhasznalo;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Schema;
 
@@ -34,7 +35,11 @@ return new class extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
-        Felhasznalo::create(["email" => "Weinbergerpeti@gmail.com","jelszó" => Hash::make("Peti1999"), "vezetéknév" => "Weinberger", "keresztnév" => "Péter", "telefonszám" => 303696080, "jelleg" => "M", "jogosultság" => "R"]);
+
+        DB::statement("ALTER table felhasznalo add constraint check_jelleg check (jelleg = 'M' or jelleg = 'C')");
+        DB::statement("ALTER table felhasznalo add constraint check_jogosultsag check (jogosultság = 'R' or jogosultság = 'A' or jogosultság = 'F')");
+
+        Felhasznalo::create(["email" => "weinbergerpeti@gmail.com","jelszó" => Hash::make("Peti1999"), "vezetéknév" => "Weinberger", "keresztnév" => "Péter", "telefonszám" => 303696080, "jelleg" => "M", "jogosultság" => "R"]);
     }
 
     /**
